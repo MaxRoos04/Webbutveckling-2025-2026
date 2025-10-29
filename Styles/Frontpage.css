@@ -1,0 +1,137 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-image: url("https://images.pexels.com/photos/33240721/pexels-photo-33240721.jpeg");
+  color: white;
+  padding: 50px 20px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+header a {
+  background-color: #bfc0ba;
+  color: white;
+  padding: 14px 25px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+header a:hover {
+  background-color: #a5a6a0;
+}
+
+body > .features {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.feature {
+  flex: 1 1 300px;
+  max-width: 400px;
+  max-height: 400px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.feature a {
+  background-color: #bfc0ba;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.feature a:hover {
+  background-color: #a5a6a0;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+  background-color: #f4f4f4;
+  font-size: 0.9rem;
+}
+
+/* Responsiv */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 90%;
+  }
+
+  .video-center video {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  header a, .feature a {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+.video-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  background-color: #f0f0f0;
+}
+
